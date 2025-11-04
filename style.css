@@ -90,3 +90,44 @@ input:focus, select:focus {
     border-color: var(--clr-secondary); 
     box-shadow: 0 0 5px rgba(255, 123, 0, 0.5);
 }
+
+#preview-card {
+    border: 2px solid var(--clr-primary); 
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+#preview-title {
+    color: var(--clr-primary);
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px dashed var(--clr-border);
+    padding-bottom: 0.5rem;
+}
+
+#preview-card p {
+    margin-bottom: 0.75rem;
+    font-size: 1rem; 
+}
+
+#preview-card p:nth-child(5), p:nth-child(6) { 
+    font-weight: bold;
+    color: var(--clr-secondary); 
+    font-size: 1.25rem;
+}
+
+@media (min-width: 768px) { 
+    main {
+        flex-direction: row;
+    }
+
+    #pratinjau {
+        flex: 1;
+    }
+    
+    #panelkontrol {
+        margin-right: 1.5rem; 
+    }
+}
